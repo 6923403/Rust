@@ -2,13 +2,25 @@ fn main()
 {
     //te1();
     //te2(); 
-    te3(); //struct
+    te4(); //struct
 }
 
+#[derive(Debug)]
 struct Rectangle
 {
     width: u32,
     height: u32,
+}
+
+fn te4()
+{
+    let rect2 = Rectangle 
+    {
+        width: 30,
+        height: 50
+    };
+
+    println!("rect1 is {:?}", rect2);
 }
 
 fn te3()
