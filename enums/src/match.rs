@@ -60,9 +60,18 @@ fn plus_one(x: Option<i32>) -> Option<i32>
     }
 }
 
+let some_u8_value = 0u8;
+match some_u8_value{
+    1 => println!("one"),
+    3 => println!("three"),
+    5 => println!("five"),
+    7 => println!("seven"),
+    _ => (),
+}
+
 fn main()
 {
-    te2();
+    te3();
 }
 
 fn te2()
