@@ -19,6 +19,24 @@
 }
 */
 
+use std::fmt;
+use std::io;
+use std::fmt::Result;
+use std::io::Result as IoResult;
+use std::op::Write;
+use std::io::{self, Write};
+use std::collections::*; //all pub
+
+fn function1() -> fmt::Result
+{}
+
+fn function2() -> io::Result<()>
+{}
+
+fn function3() -> IoResult<()>
+{}
+
+
 mod front_of_house
 {
     //mod hosting
@@ -29,6 +47,11 @@ mod front_of_house
     }
 }
 
+/*
+ * re-export
+ */
+pub use crate::front_of_house::hosting;
+
 pub fn eat_at_restaurant()
 {
     //absolute
@@ -37,6 +60,7 @@ pub fn eat_at_restaurant()
     //relative
     front_of_house::hosting::add_to_waitlist();
 }
+
 
 fn serve_order()
 {}
