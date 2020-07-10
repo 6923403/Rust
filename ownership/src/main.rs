@@ -1,11 +1,11 @@
 fn main()
 {
-    test4()
+    test4();
 }
 
 fn test4()
 {
-    let s1 = String::from("hellow");
+    let s1 = String::from("hello");
 
     let (s2, len) = calculate_length(s1);
 
