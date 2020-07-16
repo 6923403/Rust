@@ -1,5 +1,9 @@
 #!/bin/sh
 # shellcheck shell=dash
+#https://www.cnblogs.com/hustcpp/p/12341098.html
+#2. export RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup
+#3. run
+#4. echo "RUSTUP_DIST_SERVER=https://mirrors.tuna.tsinghua.edu.cn/rustup"  >> ~/.cargo/env  
 
 # This is just a little script that can be downloaded from the internet to
 # install rustup. It just does platform detection, downloads the installer
